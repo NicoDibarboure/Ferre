@@ -37,6 +37,38 @@
       </div>
     </div>
 
+    <!-- Account Page -->
+
+    <div class="account-page">
+      <div class="container">
+        <div class="row">
+          <div class="col-2">
+            <img src="../images/logo.webp" width="100%" />
+          </div>
+          <div class="col-2">
+            <div class="form-container">
+              <div class="form-btn">
+                <span onclick="login()">Iniciar Sesión</span>
+                <span onclick="register()">Registrarse</span>
+                <hr id="Indicator" />
+              </div>
+              <form id="LoginForm">
+                <input type="text" placeholder="Usuario" />
+                <input type="password" placeholder="Contraseña" />
+                <button type="submit" class="btn">Iniciar Sesión</button>
+                <a href="">Olvidaste tu contraseña?</a>
+              </form>
+              <form id="RegForm">
+                <input type="text" placeholder="Usuario" />
+                <input type="email" placeholder="Email" />
+                <input type="password" placeholder="Contraseña" />
+                <button type="submit" class="btn">Registrarse</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
     <!-- Footer -->
 
     <footer class="footer">
@@ -87,6 +119,28 @@
       </div>
     </footer>
 
-    <script src="../js/script.js"></script>
+    <!-- JS for Toggle Form -->
+
+    <script>
+
+var LoginForm = document.getElementById("LoginForm");
+var RegForm = document.getElementById("RegForm");
+var Indicator = document.getElementById("Indicator");
+
+function register() {
+  RegForm.style.transform = "translateX(0px)";
+  LoginForm.style.transform = "translateX(0px)";
+  Indicator.style.transform = "translateX(100px)";
+}
+
+function login() {
+  RegForm.style.transform = "translateX(300px)";
+  LoginForm.style.transform = "translateX(300px)";
+  Indicator.style.transform = "translateX(0px)";
+}
+
+    </script>
   </body>
-</html>
+
+  
+  </html>
