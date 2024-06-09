@@ -60,7 +60,7 @@ a {
 .col-2 h1 {
   font-size: 50px;
   line-height: 60px;
-  margin: 25px 0;
+  margin: 40px 0;
 }
 
 .col-2 h1 span {
@@ -598,5 +598,47 @@ form a {
 
   .cart-info p {
     display: none;
+  }
+
+  .cart-info {
+    display: block;
+  }
+
+  .cart-info img {
+    width: 100px;
+  }
+
+  .cart-info input {
+    width: 40px;
+  }
+
+  .total-price table {
+    max-width: 100%;
+  }
+
+  .total-price h3 {
+    font-size: 24px;
+  }
+
+  .footer-col {
+    flex-basis: 50%;
+  }
+
+  .footer-col-1 {
+    flex-basis: 30%;
+  }
+
+  .footer-col-2 {
+    flex-basis: 70%;
+    text-align: left;
+  }
+
+  .footer-col-3,
+  .footer-col-4 {
+    flex-basis: 25%;
+  }
+
+  .footer hr {
+    margin: 20px 0;
   }
 }

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mi Cuenta | Donto Ferreteria</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- Main Section -->
+    <div class="container">
+      <div class="navbar">
+        <div class="logo">
+          <a href="../index.html"
+            ><img src="../images/logo.webp" alt="logo"
+          /></a>
+        </div>
+        <nav>
+          <ul id="MenuItems">
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="/pages/products.html">Catálogo</a></li>
+            <li><a href="/pages/cuenta.html">Contacto</a></li>
+            <li><a href="/pages/cuenta.html">Cuenta</a></li>
+          </ul>
+        </nav>
+        <a href="./cart.html"
+          ><img src="../images/cart.webp" width="30px" height="30px"
+        /></a>
+        <img
+          src="../images/menu.png"
+          class="menu-icon"
+          onclick="menuToggle()"
+        />
+      </div>
+    </div>
+
+    <!-- Account Page -->
+
+    <div class="account-page">
+      <div class="container">
+        <div class="row">
+          <div class="col-2">
+            <img src="../images/logo.webp" width="100%" />
+          </div>
+          <div class="col-2">
+            <div class="form-container">
+              <div class="form-btn">
+                <span onclick="login()">Iniciar Sesión</span>
+                <span onclick="register()">Registrarse</span>
+                <hr id="Indicator" />
+              </div>
+              <form id="LoginForm">
+                <input type="text" placeholder="Usuario" />
+                <input type="password" placeholder="Contraseña" />
+                <button type="submit" class="btn">Iniciar Sesión</button>
+                <a href="">Olvidaste tu contraseña?</a>
+              </form>
+              <form id="RegForm">
+                <input type="text" placeholder="Usuario" />
+                <input type="email" placeholder="Email" />
+                <input type="password" placeholder="Contraseña" />
+                <button type="submit" class="btn">Registrarse</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer-col-1">
+            <h3>Contactate con nosotros</h3>
+            <p>
+              Contactate con nosotros para cualquier duda o consulta que tengas.
+            </p>
+            <div>
+              <a class="btn" href="contacto.html">Contacto &#x2709;</a>
+            </div>
+          </div>
+
+          <div class="footer-col-2">
+            <img src="../images/logo.webp" />
+            <p>
+              Nuestro proposito es ofrecer productos de calidad a precios
+              accesibles.
+            </p>
+          </div>
+
+          <div class="footer-col-3">
+            <h3>Useful Links</h3>
+            <ul>
+              <li>Cupones</li>
+              <li>Blog</li>
+              <li>Politica de Devolución</li>
+              <li>Hacete Cliente</li>
+            </ul>
+          </div>
+
+          <div class="footer-col-4">
+            <h3>Redes Sociales</h3>
+            <ul>
+              <li>Facebook</li>
+              <li>Twitter</li>
+              <li>Instagram</li>
+              <li>Youtube</li>
+            </ul>
+          </div>
+        </div>
+        <hr />
+        <div class="copyright">
+          <p>&copy; 2024 Donto Ferreteria. Todos los derechos reservados.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JS for Toggle Form -->
+    <script src="../js/script.js" defer></script>
+  </body>
+</html>
